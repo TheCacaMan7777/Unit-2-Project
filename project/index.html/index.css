@@ -5,7 +5,8 @@ h1{
     text-align: center;
 }
 p {
-    margin-right: 15px;
+    margin-right: 100px;
+    margin-left: 100px;
     text-align: center;
     font-size: larger;
 }
