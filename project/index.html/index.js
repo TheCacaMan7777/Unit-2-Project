@@ -1,11 +1,14 @@
 ////this is for the hexadecimal code////
+///asks user for a number
 let input = prompt("Insert a decimal number");
 
 
-
+///divides the input by 16 and and rounds it by nearest whole number
 let answerPart1 = Math.floor(input/16) ;
+///takes answer above and finds the remainder
 let remainder1 = input - (answerPart1*16) ; 
 
+/// this looks for what the first digit of the hexadecimal should be 1-9 or A-F
      if (remainder1 == 0) {
       remainder1 = "0";
     }
@@ -57,6 +60,7 @@ let remainder1 = input - (answerPart1*16) ;
 
 
 
+///this does pretty much the same thing as the first part. all i did was add one number to the variables (so 'remainder1' becomes 'remainder2' and so on)
 
     let answerPart2 = Math.floor(answerPart1/16) ;
     let remainder2 =  answerPart1 - (answerPart2*16);
@@ -112,6 +116,8 @@ let remainder1 = input - (answerPart1*16) ;
 
 
 
+
+/// Same as the last one
     let answerPart3 = Math.floor(answerPart2/16) ;
     let remainder3 =  answerPart2 - (answerPart3*16);
 
@@ -165,6 +171,11 @@ let remainder1 = input - (answerPart1*16) ;
     }
 
 
+
+
+///This just puts the answers in order, since all the remainder answers are in "quotes" they're not added like normal numbers. just put together
 let hexadecimal = remainder3 + remainder2 + remainder1;
 
+
+///right click on html, click 'inspect', click the tab that says 'console log', and you should see the answer
 console.log(`The hexadecimal of the decimal is ${hexadecimal}`);
