@@ -1,15 +1,11 @@
-{
-    var input = Number(prompt("Put in a number"));
+    var input = Number(prompt("Put in a decimal"));
  
-    console.log(input + "in decimal to decimal: " + input)
-    console.log(input + "in decimal to binary: " + input.toString(2));
-    console.log(input + "in decimal to hex: " + input.toString(16));       
-}
+    console.log(input + " in decimal to decimal: " + input)
+    console.log(input + " in decimal to binary: " + input.toString(2));
+
+
+
 ////this is for the hexadecimal code////
-///asks user for a number
-let input = prompt("Insert a decimal number");
-
-
 ///divides the input by 16 and and rounds it by nearest whole number
 let answerPart1 = Math.floor(input/16) ;
 ///takes answer above and finds the remainder
