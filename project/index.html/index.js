@@ -174,20 +174,9 @@ let remainder1 = input - (answerPart1*16) ;
     }
 
 
-
-
 ///This just puts the answers in order, since all the remainder answers are in "quotes" they're not added like normal numbers. just put together
 let hexadecimal = remainder3 + remainder2 + remainder1;
 
 
 ///right click on html, click 'inspect', click the tab that says 'console log', and you should see the answer
 console.log(`The hexadecimal of the decimal is ${hexadecimal}`);
-
-
-{
-    var input = Number(prompt("Put in a number"));
- 
-    console.log(input + "in decimal to decimal: " + input)
-    console.log(input + "in decimal to binary: " + input.toString(2));
-    console.log(input + "in decimal to hex: " + input.toString(16));       
-}
